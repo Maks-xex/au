@@ -1,0 +1,24 @@
+.register-form-submit__wrapper {
+	display: flex;
+	margin: 0 auto;
+	width: 542px;
+}
+.register-form__submit {
+	width: 119px;
+	height: 40px;
+
+	font-size: 18px;
+	line-height: 20px;
+
+	color: white;
+
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+
+	border: none;
+	background: #71c838;
+	box-shadow: 0px 1px 0px #539d22;
+	cursor: pointer;
+	&:hover {
+		background-color: rgba(83 157 34 / 90%);
+	}
+}

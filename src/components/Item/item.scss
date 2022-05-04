@@ -1,0 +1,65 @@
+.item {
+	display: flex;
+	align-items: center;
+
+	width: 916px;
+
+	margin-bottom: 23px;
+}
+.register-form-item__password,
+.register-form-item__email {
+	margin-top: 23px;
+}
+.item label {
+	display: flex;
+	justify-content: space-between;
+
+	min-width: 559px;
+
+	font-size: 21px;
+	line-height: 19px;
+	font-weight: 400;
+
+	cursor: pointer;
+}
+
+input {
+	margin: 0;
+	padding: 0;
+}
+.register-form__items {
+	& select,
+	& input {
+		width: 335px;
+		border: 1px solid #999999;
+		height: 31px;
+		box-sizing: border-box;
+		&.error {
+			border-color: #ff0000;
+		}
+	}
+}
+.description {
+	width: 339px;
+	margin: 0;
+	margin-left: 18px;
+	align-self: center;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+
+	color: #999999;
+}
+
+.error-message p {
+	position: absolute;
+
+	margin: 0;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+
+	color: #ff0000;
+}

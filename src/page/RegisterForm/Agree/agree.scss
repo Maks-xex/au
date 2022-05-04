@@ -1,0 +1,54 @@
+.register-form-item__agree {
+	& p {
+		margin: 0;
+
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+	}
+	& label {
+		width: 594px;
+	}
+}
+
+.checkbox-wrapper {
+	display: flex;
+	align-items: center;
+
+	& input {
+		position: absolute;
+		display: block;
+		width: 0;
+		height: 0;
+		z-index: -1;
+		margin-right: 8px;
+		opacity: 0;
+
+		align-self: center;
+	}
+}
+
+input[type="checkbox"] + span {
+	display: inline-block;
+	position: relative;
+	left: 8px;
+	top: 1px;
+	width: 12px;
+	height: 12px;
+	margin-right: 15px;
+
+	user-select: none;
+
+	border: 1px solid #7e7e7e;
+}
+
+input[type="checkbox"]:checked + span::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	background-image: url("../../../assets/svg/Vector.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}

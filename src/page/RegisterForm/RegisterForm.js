@@ -26,14 +26,6 @@ const firstCity = cities.find(
 	(city) => city.population === maxPopValue.toString() && city,
 ).city;
 
-const initialState = {
-	name: "Человек №3596941",
-	city: firstCity,
-	password: "",
-	repassword: "",
-	email: "",
-};
-
 const sortedArrayFunc = (array, population) => {
 	array = sortByAlphabet(array);
 	array = sortByPopulation(array, population);
@@ -42,7 +34,13 @@ const sortedArrayFunc = (array, population) => {
 };
 
 export const RegisterForm = () => {
-	const [userInfo, setUserInfo] = useState(initialState);
+	const [userInfo, setUserInfo] = useState({
+		name: "Человек №3596941",
+		city: firstCity,
+		password: "",
+		repassword: "",
+		email: "",
+	});
 
 	const [errorMsg, setErrorMsg] = useState({});
 
